@@ -2,24 +2,38 @@
 <html>
     <head>
         <title>Login page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
-    <body style="background-color:powderblue;">
-        <h2>Login Page</h2>
-        <table border="1" align="center">
-        <tr>
-           <td>UserName:</td> 
-           <td>
-           <input type="text" name="username"></td>
-        </tr>
-        <tr>
-        <td> Password:</td>
-       <td><input type="password" name="pswd"></td>
-       </tr>
-       <tr>
-           <td>
-               <input type="submit" id="b1" name="sub"/>
-           </td>
-       </tr>
-    </table>
+    <body>
+        <div class="main">
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="login.html">Login</a></li>
+          <li><a href="category.html">Package</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Login</h1>
+            </div>
+         <div class="main">
+            <form>
+                <span>
+                    <input type="text" placeholder="Username" name="unm"/>
+                </span><br>
+                <span>
+                    <input type="password" placeholder="password" name="pswd"/>
+                </span><br>
+                <span>
+                   <i>Manager</i><input id="check"type="checkbox" name="c1" value="admin"/>
+                </span>
+                <button>Login</button><br>
+                <a href="#">Forgot password</a><br>
+                <a href="Registration.html">Create a new account</a>
+            </form>
+          </div>
+        </div>
     </body>
 </html>

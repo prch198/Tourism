@@ -1,0 +1,52 @@
+body{
+    font-family: Century;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/vegat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.package{
+    width: 1000px;
+    display: table;
+    margin: auto;
+}
+.package h2{
+    float: left;
+    line-height: 41px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.pack{
+    float: left;
+    width: 32%;
+    padding: 3px;
+    margin-top: 30px;
+}
+.pack img{
+    height:300px;
+}
+.pack h3{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.pack p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+.pack a{
+    text-decoration: none;
+    font-family: Century;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #fff;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+.pack a:hover{
+    background-color: #fff;
+    color:#000;
+}
