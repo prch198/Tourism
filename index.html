@@ -12,16 +12,31 @@
            <li><a href="login.html">Login</a></li>
            <li><a href="category.html">Package</a></li>
            <li><a href="profile.html">Profile</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
            </ul>
             </div>
             <div class="title">
                 <h1>Tourism</h1>
-                <p><b>Looking for a tour package?Tours and travel are providing all the relavent services to you.
-                    No need to do planning for your trips.We provide the whole package for your travel trip. We can also recommend 
-                    various places you would like to go. We make sure our customer travel comfortably. The accomodations that will be provided 
-                    to you will be quite good according to your budget and you will have a safe experience.</b></If>
+                <p><b>Looking for a tour package? Tours and travel are providing all the relavent services to you.
+                    No need to do planning for your trips.We provide the whole package for your travel trip.Try it now!</b>
                 </p> 
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h2>More About Us!</h2>
+                        <p>We can also recommend various places you would like to go. We make sure our customer travel comfortably. The accomodations that will be provided 
+                            to you will be quite good according to your budget and you will have a safe experience.</p>
+                    </div>
+                </div>
+                <button onclick="togglePopup()">Read More</button>
             </div>
+            <script>
+                function togglePopup()
+                {
+                    document.getElementById("popup-1").classList.toggle("active");
+                }
+            </script>
         </header>
     </body>
 </html>

@@ -9,21 +9,22 @@
         <div class="main">
             <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
             </ul>
           </div>
             <div class="registration">
             <form>
                <h2>Registration</h2><br>
-                <input id="name" placeholder="Enter name" type="text" name="usnm"><br><br>
+                <input id="name" placeholder="Enter name" type="text" name="usnm" required><br><br>
                 
-                <input id="name" placeholder="Enter password" type="password" name="pass"><br><br>
+                <input id="name" placeholder="Enter password" type="password" minlength="5" name="pass" required><br><br>
                 
-                <input id="name" placeholder="Enter email" type="email" name="mail"><br><br>
+                <input id="name" placeholder="Enter email" type="email" name="mail" required><br><br>
                 
                 <input type="radio" id="ma" name="gen"><span id="ma">&nbsp;Male</span>&nbsp;
                 <input type="radio" id="ma" name="gen"><span id="ma">&nbsp;Female</span><br><br>
                             
-                <input id="number" type="number" placeholder="Enter number" name="mobileno"><br><br>
+                <input id="number" type="number" placeholder="Enter number" name="mobileno" required><br><br>
                 
                 <select id="state">
                     <option disabled="disabled" selected="selected">--Choose Option</option>

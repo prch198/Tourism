@@ -1,9 +1,10 @@
 body{
     font-family: Century;
-    background-image: url(../Images/reges.jpg);
+    background-image: url(../Images/home.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
+    image-resolution: 0.7;
 }
 
 .registration{
@@ -25,7 +26,6 @@ h2{
     font-size: 18px;
     border-radius: 5px;
     outline: 0;
-    background: none;
     border: 1px solid white;
 }
 #number{
@@ -35,18 +35,14 @@ h2{
     font-size: 18px;
     border-radius: 5px;
     outline: 0;
-    background: none;
     border: 1px solid white;
 }
 #state{
-    width: 42%;
+    width:42%;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     outline: 0;
-    background: none;
-    color: #fff;
-    line-height: 10px;
 }
 .registration button{
     padding-left: 0;

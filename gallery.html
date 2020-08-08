@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Gallery
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            .back{
+                top:15%;
+                position: absolute;
+                left: 25%;
+            }
+            .back h2{
+                color: #fff;
+                text-align: center;
+            }
+            body{
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var i=0;
+            var images=[];
+            var time=1000;
+        
+            images[0]='Images/saputra.jpg';
+            images[1]='Images/udaipur.jpg';
+            images[2]='Images/kashmir.jpg';
+            images[3]='Images/Forts.jpg';
+        
+            function changeImg(){
+                document.slide.src=images[i];
+                if(i<images.length-1){
+                    i++;
+                }else{
+                    i=0;
+                }
+                setTimeout("changeImg()",time);
+            }
+            window.onload=changeImg;
+        </script>
+        <div class="main">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="category.html">Package</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+             </div>
+        <div class="back">
+            <h2>Gallery</h2>
+            <img name="slide" width="700" height="500">
+        </div>
+    </body>
+</html>
