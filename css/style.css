@@ -26,6 +26,7 @@ ul li a{
     transition: 0.6s ease;
 }
 ul li a:hover{
+    text-decoration: none;
     background-color: #fff;
     color:#000;
 }

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Package Booking</title>
+        <title>Book Package</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/pack.css">
+        <link rel="stylesheet" type="text/css" href="css/addp.css">
     </head>
     <body>
         <div class="main">
@@ -14,29 +14,57 @@
             <li><a href="profile.html">Profile</a></li>
             </ul>
          </div>
-        <div class="package">
-            <h2>Religious Tour</h2>
+         <div class="hedy">
+            <h2>Religious Packages</h2>
         </div>
-            <div class="pack">
-                <img src="Images/kedarnath.jpg" style="width: 100%">
-                <h3>Kedarnath</h3>
-                    <p>Kedarnath is a town in the Indian state of Uttarakhand, which has gained importance because of Kedarnath Temple
-                    <br>Amount:Rs.10000</p>
-                    <a href="goa.html" class="cart">View</a>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/kedarnath.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Kedarnath Temple</h5>
+                          <p class="card-text">Kedarnath is a town in the Indian state of Uttarakhand, which has gained importance because of Kedarnath Temple
+                              <br><br>
+                              <input type="number" name="prn1" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dn1"/><br><br>
+                              Rs.7000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="pack">
-                    <img src="Images/somanth.jpg" style="width: 100%">
-                    <h3>Somanth</h3>
-                   <p>Somnath means "Lord of soma" an epithet of lord shiva. The somanth temple is known as the shrine Eternal.It is one of the 12 Jjyotrilings of India
-                        <br>Amount:Rs5000</p>
-                    <a href="#" class="cart">View</a>
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/tirupati.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Tirupati Temple</h5>
+                          <p class="card-text">Tirupati is a city in the Indian state of AndraPradesh.It is the parsadam at Venkateswara Temple.
+                              <br><br>
+                              <input type="number" name="prn2" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dn2"/><br><br>
+                              Rs.8000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="pack">
-                    <img src="Images/tirupati.jpg" style="width: 100%">
-                    <h3>Tirupati Temples</h3>
-                    <p>Tirupati is a city in the Indian state of AndraPradesh.It is the parsadam at Venkateswara Temple.
-                       <br> Amount:Rs7000</p>
-                 <a href="#" class="cart">View</a>
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/somanth.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Somnath</h5>
+                          <p class="card-text">Somnath means "Lord of soma" an epithet of lord shiva.It is one of the 12 Jjyotrilings of India
+                              <br><br>
+                              <input type="number" name="prn3" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dn3"/><br><br>
+                              Rs.6000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
+                </div>
             </div>
+        </div>
     </body>
 </html>

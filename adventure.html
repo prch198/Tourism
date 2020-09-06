@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Package Booking</title>
+        <title>Book Package</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/pack.css">
+        <link rel="stylesheet" type="text/css" href="css/addp.css">
     </head>
     <body>
         <div class="main">
@@ -14,29 +14,57 @@
             <li><a href="profile.html">Profile</a></li>
             </ul>
          </div>
-        <div class="package">
-            <h2>Religious Tour</h2>
-        </div>
-            <div class="pack">
-                <img src="Images/manali.jpg" style="width: 100%">
-                <h3>Manali Trek</h3>
-                    <p>Mnali is situated at hight altitude Himaliyan resort town in India northern himachal pradesh state.It include amazing trekking places.
-                    <br>Amount:Rs.10000</p>
-                    <a href="goa.html" class="cart">View</a>
+         <div class="hedy">
+             <h2>Adventurous Packages</h2>
+         </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/manali.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Manali</h5>
+                          <p class="card-text">Manali is situated at hight altitude Himaliyan resort town in India northern himachal pradesh state.It include amazing trekking places.
+                              <br><br>
+                              <input type="number" name="prs1" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dt1"/><br><br>
+                              Rs.10000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="pack">
-                    <img src="Images/uttar.jpg" style="width: 100%">
-                    <h3>Uttarkand</h3>
-                   <p>Uttarkand is a state in northern India crossed by the himalyas known for hindu pilgrimage sites.Jim corbet national park is also forested.
-                        <br>Amount:Rs5000</p>
-                    <a href="#" class="cart">View</a>
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/uttar.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Uttarakand</h5>
+                          <p class="card-text">Uttarkand is a state in northern India crossed by the himalyas known for hindu pilgrimage sites.Jim corbet national park is also forested
+                              <br><br>
+                              <input type="number" name="prs2" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dt2"/><br><br>
+                              Rs.15000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
                 </div>
-                <div class="pack">
-                    <img src="Images/saputra.jpg" style="width: 100%">
-                    <h3>Saputara Trek</h3>
-                    <p>Saputara is hill town in the west Indian syste of gujarat.The hilly region affers a great adventure and trekking.
-                       <br> Amount:Rs7000</p>
-                 <a href="#" class="cart">View</a>
+                <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="Images/saputra.jpg" alt="Card image cap" width="300px" height="200px">
+                        <div class="card-body">
+                          <h5 class="card-title">Saputara</h5>
+                          <p class="card-text">Saputara is hill town in the west Indian syste of gujarat.The hilly region affers a great adventure and trekking.Atmosphere is quite rainy.
+                              <br><br>
+                              <input type="number" name="prs3" placeholder="No. of person"/><br><br>
+                              <input type="date" name="dt3"/><br><br>
+                              Rs.9000
+                          </p>
+                          <a href="#" class="btn btn-success">Book</a>
+                        </div>
+                      </div>
+                </div>
             </div>
+        </div>
     </body>
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rajasthan Package</title>
+        <title>Includes Places</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/tabl.css">
     </head>
@@ -10,40 +11,55 @@
             <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="category.html">Package</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             </ul>
-          </div>
-        <div class="place">
-        <h3>Places Included</h3>
-        <table align="center">
-            <tr>
-                <td>
-                    <input type="checkbox" id="c1" name="jaip"/>
-                    <label>Japiur</label>
-                    <img src="Images/jaipur.jpg" width="500px" height="300px">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="c2" name="jodh"/>
-                    <label>Jodhpur</label>
-                    <img src="Images/jodhpur.jpg" width="500px" height="300px">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="c3" name="udaipur"/>
-                    <label>Udaipur</label>
-                    <img src="Images/udaipur.jpg" width="500px" height="300px">
-                </td>
-            </tr>
-        </table>
         </div>
-        <div class="pl" align="center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <img src="Images/jaipur.jpg" class="card-img-top" alt="..." width="300px" height="200px">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Jaipur</h5>
+                          <p class="card-text">Rs.5000</p>
+                          <input type="checkbox" id="cl1" name="jp"/>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <img src="Images/jodhpur.jpg" class="card-img-top" alt="..." width="300px" height="200px">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Jodhpur</h5>
+                          <p class="card-text">Rs.6000</p>
+                          <input type="checkbox" id="cl2" name="jh"/>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <img src="Images/udaipur.jpg" class="card-img-top" alt="..." width="300px" height="200px">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Udaipur</h5>
+                          <p class="card-text">Rs.5500</p>
+                          <input type="checkbox" id="cl3" name="ud"/>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="payl">
             <label>Number of person:</label>
-            <input type="number" name="per"/><br><br>
+            <input type="number" name="per1" required/><br><br>
             <label>Amount:</label>
-            <input type="number" name="amt"/>
-            <input type="button" name="bn2" value="book"/>
+            <input type="number" name="amtt"/><br><br>
+            Date of journey:
+            <input type="date" name="seldate"/>
+            <br>
+            <br>
+            <input type="button" name="bntt1" value="Book"/>
+            <br><br>
         </div>
     </body>
 </html>
