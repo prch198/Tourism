@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body style="background-color: tan;">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+       <style>
+            .alg{
+                padding-top: 5%;
+                padding-left: 39%;
+                padding-bottom: 5%;
+            }
+            #saml{
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="background-color:lightsteelblue;">
+        <div class="main">
+            <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <img class="alg" src="Images/travel.jpg" width="300px" height="300px">
+        <div id="saml">
         <h2>Your successfully logged out!</h2>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('#saml').on('mouseover',function()
+                {
+                    $('#saml').css('background-color','coral')
+                });
+                $('#saml').append('<p><h3>Thank you for spending time with website!</h3></p>')
+            });
+        </script>
     </body>
 </html>
